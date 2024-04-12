@@ -1,0 +1,57 @@
+<!--
+ Copyright 2024 Steve Nginyo
+ 
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+ 
+     https://www.apache.org/licenses/LICENSE-2.0
+ 
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Working with Forms</title>
+    </head>
+    <body>
+        <h2>Student Registration Form</h2>
+
+        <form action="/submit_registration" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+        
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob" required><br>
+        
+        <label for="gender">Gender:</label><br>
+        <select id="gender" name="gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select><br>
+        
+        <label for="address">Address:</label><br>
+        <input type="text" id="address" name="address" required><br>
+        
+        <label for="telephone">Telephone:</label><br>
+        <input type="tel" id="telephone" name="telephone" required><br>
+        
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        
+        <label for="course">Course:</label><br>
+        <input type="text" id="course" name="course" required><br>
+        
+        <input type="submit" value="Register">
+        <input type="reset" value="Cancel">
+        </form>
+
+    </body>
+</html>
